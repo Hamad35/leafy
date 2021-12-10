@@ -1,0 +1,131 @@
+@media(max-width: 1024px) {
+    .header__content {
+        width: 80%;
+    }
+    .service__one,
+    .service__two,
+    .service__three {
+        padding: 2rem !important;
+        flex-basis: 40%;
+    }
+
+    .donation__box {
+        padding: 0rem;
+    }
+
+    .column__left {
+        height: 40vh !important;
+    }
+}
+
+@media(max-width: 940px) {
+    .header__menu {
+        display: none;
+    }
+}
+@media(max-width: 768px) {
+    .header__content {
+        width: 95%;
+        margin-left: 5%;
+    }
+    .services {
+        .row {
+            width: 90%;
+        }
+    }
+    .service__one,
+    .service__two,
+    .service__three {
+        padding: 2rem .5rem !important;
+    }
+    .donation__box {
+        .row {
+            flex-direction: column;
+            width: 90%;
+        }
+
+        &--1,
+        &--2 {
+            margin: 2rem 0;
+        }
+
+    }
+    .donation {
+        height: 90vh;
+    }
+    .project {
+        .row {
+            width: 90%;
+        }
+    }
+
+    .column__left {
+        height: 60vh !important;
+    }
+    .reviews {
+        p {
+            width: 80%;
+        }
+    }
+}
+@media(max-width: 404px) {
+    nav {
+        .row {
+            width: 95%;
+            flex-direction: row !important;
+        }
+    }
+    .header__content {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .heading__top {
+        font-weight: lighter;
+        font-size: 3rem !important;
+        letter-spacing: 6px;
+    }
+    .heading__middle {
+        font-weight: lighter;
+        font-size: 6rem !important;
+    }
+
+    .heading__bottom {
+        font-size: 4rem !important;
+    }
+    .btn {
+        margin-top: 2rem;
+    }
+    .donation {
+        height: 155vh;
+    }
+    .donation__box--1,
+    .donation__box--2 {
+        margin-right: 0 !important;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .twocolumn {
+        .row {
+            width: 80%;
+        }
+        .right__box {
+            p {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .newsletter {
+        text-align: center;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        padding: 30px 0;
+        text-align: center;
+    }
+}

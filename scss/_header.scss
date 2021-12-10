@@ -1,0 +1,97 @@
+.header {
+    background-image: url(../images/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+    nav {
+        width: 100%;
+        background-color: rgba(37, 53, 38, 0.85);
+        position: fixed;
+        z-index: 999;
+
+        .logo {
+            color: var(--color-primary);
+
+            span {
+                color: var(--color-white);
+                font-weight: 800;
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+
+        .item {
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 4rem;
+            }
+
+            .link {
+                &:hover {
+                    color: var(--color-primary);
+                    transition: .3s ease-in-out;
+                }
+            }
+
+            &__icon {
+                font-size: 1.3rem;
+                color: var(--color-primary);
+                margin-right: .8rem;
+            }
+        }
+    }
+
+    .nav__btn {
+        background-color: var(--color-primary);
+        padding: 2.3rem 2rem;
+        font-weight: 800;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        color: var(--color-white);
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 10%;
+        width: 50%;
+
+        h1 {
+            margin: 0;
+        }
+
+        .heading__top {
+            font-weight: lighter;
+            font-size: 4rem;
+            letter-spacing: 6px;
+        }
+        .heading__middle {
+            font-weight: lighter;
+            font-size: 10rem;
+        }
+
+        .heading__bottom {
+            font-size: 7rem;
+        }
+
+        .btn {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            padding: 20px 30px;
+            background-color: var(--color-primary);
+            border: 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 800;
+            color: var(--color-white);
+        }
+    }
+}
